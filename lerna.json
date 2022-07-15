@@ -1,7 +1,14 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "useNx": true,
-  "version": "0.0.1-alpha.6"
+  "version": "0.0.1-alpha.6",
+  "npmClient": "yarn",
+  "command": {
+    "version": {
+      "conventionalCommits": true,
+      "exact": true,
+      "message": "chore(release): %s"
+    }
+  },
+  "changelogPreset": "conventionalcommits"
 }
