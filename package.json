@@ -6,6 +6,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "version": "conventional-changelog -p angular -o RELEASE.md"
+  },
   "repository": "https://github.com/Kedyn/playground.git",
   "author": "Kedyn Macedonio <mkedyn@gmail.com>",
   "license": "MIT",
