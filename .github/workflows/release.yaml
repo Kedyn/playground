@@ -36,7 +36,7 @@ jobs:
           mkdir ${{ github.workspace }}/build
           echo test1 >> ${{ github.workspace }}/build/test1.txt
           echo test2 >> ${{ github.workspace }}/build/test2.txt
-          tar build.tar.gz ${{ github.workspace }}/build
+          tar -czvf build.tar.gz ${{ github.workspace }}/build
 
       - name: Create version
         run: yarn lerna version prerelease --yes
