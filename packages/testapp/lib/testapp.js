@@ -26,4 +26,6 @@ function testapp() {
   // FEATURE: testapp 11
   // FIX: testapp 11
   // FEATURE: testapp 12
+  // FIX: testapp 12
+  // FEATURE: testapp 13
 }
