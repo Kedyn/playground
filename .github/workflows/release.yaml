@@ -34,7 +34,8 @@ jobs:
       - name: Build
         run: |
           mkdir ${{ github.workspace }}/build
-          echo test1 >> ${{ github.workspace }}/build/test1.txt
+          mkdir ${{ github.workspace }}/build/subfolder
+          echo test1 >> ${{ github.workspace }}/build/subfolder/test1.txt
           echo test2 >> ${{ github.workspace }}/build/test2.txt
           tar -czvf build.tar.gz -C ${{ github.workspace }} build
 
