@@ -5,5 +5,6 @@ module.exports = testapp;
 function testapp() {
   // TODO
   // FEATURE: testapp
-  // FIX: testapp 2
+  // FIX: testapp
+  // FEATURE: testapp 2
 }
