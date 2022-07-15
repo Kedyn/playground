@@ -9,9 +9,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: |
+          yarn
+          yarn lerna bootstrap
+
+      - name: Build
+        run: |
+          mkdir ${{ github.workspace }}/build
+          echo test1 >> ${{ github.workspace }}/build/test1.txt
+          echo test2 >> ${{ github.workspace }}/build/test2.txt
+
       - name: Create version
         uses: yarn lerna version prerelease --yes
+
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           body_path: ${{ github.workspace }}/RELEASE.md
+          files: ${{ github.workspace }}/build/**
+          prerelease: true
