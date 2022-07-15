@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.1-alpha.9](https://github.com/Kedyn/playground/compare/v0.0.1-alpha.8...v0.0.1-alpha.9) (2022-07-15)
+
+
+### Features
+
+* 6 ([c3bb634](https://github.com/Kedyn/playground/commit/c3bb63455ecf7a558acdaf763b0000d78ca5dd75))
+
+
+
 ## [0.0.1-alpha.8](https://github.com/Kedyn/playground/compare/v0.0.1-alpha.7...v0.0.1-alpha.8) (2022-07-15)
 
 
