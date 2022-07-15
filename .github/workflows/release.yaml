@@ -29,7 +29,7 @@ jobs:
           echo test2 >> ${{ github.workspace }}/build/test2.txt
 
       - name: Create version
-        uses: yarn lerna version prerelease --yes
+        run: yarn lerna version prerelease --yes
 
       - name: Release
         uses: softprops/action-gh-release@v1
