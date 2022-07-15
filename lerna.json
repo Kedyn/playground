@@ -4,7 +4,7 @@
   ],
   "useWorkspaces": true,
   "useNx": true,
-  "version": "0.0.1-alpha.18",
+  "version": "0.0.1-alpha.19",
   "npmClient": "yarn",
   "command": {
     "version": {
