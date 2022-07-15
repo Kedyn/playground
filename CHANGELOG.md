@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.1-alpha.23 (2022-07-15)
+
+
+### Bug Fixes
+
+* 13 ([292cf81](https://github.com/Kedyn/playground/commit/292cf81b8fb6ff6f9249d0457b7826e651b6f232))
+
+
+
 ## 0.0.1-alpha.22 (2022-07-15)
 
 
