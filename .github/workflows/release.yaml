@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Create version
+        uses: yarn lerna version prerelease --yes
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
