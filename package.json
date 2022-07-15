@@ -1,0 +1,15 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": "https://github.com/Kedyn/playground.git",
+  "author": "Kedyn Macedonio <mkedyn@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^5.1.8"
+  }
+}
