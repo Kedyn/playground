@@ -33,11 +33,11 @@ jobs:
 
       - name: Build
         run: |
-          mkdir ${{ github.workspace }}/build
-          mkdir ${{ github.workspace }}/build/subfolder
-          echo test1 >> ${{ github.workspace }}/build/subfolder/test1.txt
-          echo test2 >> ${{ github.workspace }}/build/test2.txt
-          tar -czvf build.tar.gz -C ${{ github.workspace }} build
+          mkdir build
+          mkdir build/subfolder
+          echo test1 >> build/subfolder/test1.txt
+          echo test2 >> build/test2.txt
+          tar -czvf build.tar.gz build
 
       - name: Create version
         run: yarn lerna version prerelease --yes
@@ -50,13 +50,13 @@ jobs:
 
       - name: Remove first line of release notes
         run: |
-          tail -n +2 ${{ github.workspace }}/RELEASE.md > ${{ github.workspace }}/RELEASE.tmp
-          mv ${{ github.workspace }}/RELEASE.tmp ${{ github.workspace }}/RELEASE.md
+          tail -n +2 RELEASE.md > RELEASE.tmp
+          mv RELEASE.tmp RELEASE.md
 
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.RELEASE_VERSION }}
-          body_path: ${{ github.workspace }}/RELEASE.md
+          body_path: RELEASE.md
           files: build.tar.gz
           prerelease: true
